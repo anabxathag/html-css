@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML form</title>
+</head>
+<body>
+    <form action="html_forms_12.php" method="POST" enctype="multipart/form-data">
+        <label for="username">username: </label>
+        <input type="text" id="username" 
+        placeholder="SpongeBob" minlength="6" 
+        maxlength="15" required>
+        <br>
+        
+        <label for="password">password: </label>
+        <input type="password" id="password" 
+        minlength="6" maxlength="15" required>
+        <br>
+
+        <label for="email">email: </label>
+        <input type="email" id="username" 
+        placeholder="google1234@gmail.com" required>
+        <br>
+
+        <label for="phone">phone# </label>
+        <input type="tel" id="phone" 
+        placeholder="012-345-6789" 
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        <br>
+
+        <label for="bday">birthdate: </label>
+        <input type="date" id="bday"><br>
+
+        <label for="quantity">quantity: </label>
+        <input type="number" id="quantity"
+        min="0" max="99" value="1"><br>
+
+        <label for="position">education background: </label>
+        
+        <label for="bachelor">B.B.A</label>
+        <input type="radio" id="bachelor" value="bachelor" name="position">
+        <label for="Master">M.B.A</label>
+        <input type="radio" id="Master" value="Master" name="position">
+        <label for="Docter">Ph.D</label>
+        <input type="radio" id="Docter" value="Docter" name="position"><br>
+
+        <label for="payment">payment =></label>
+        <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="paypal">paypal</option>
+        </select><br>
+
+        <label for="sub">subscribe: </label>
+        <input type="checkbox" id="sub"><br>
+
+        <label for="comment">comment: </label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <label for="file">upload file: </label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

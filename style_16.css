@@ -1,0 +1,9 @@
+h1{
+    font-family: 'Borel', Verdana;
+}
+p{
+    font-family: 'Borel', 'Courier New';
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
